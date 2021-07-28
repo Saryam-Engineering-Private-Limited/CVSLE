@@ -1,0 +1,22 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CVSLE	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getSoftStartInterval KEYWORD2
+setSoftStartInterval	KEYWORD2
+getLoadMax	KEYWORD2
+setLoadMax	KEYWORD2
+startLoadSoft	KEYWORD2
+stopLoad	KEYWORD2
+startLoadHard	KEYWORD2
+getInputTimePeriod	KEYWORD2
+getInputFrequency	KEYWORD2
+attachRoutineForCompare	KEYWORD2
+attachRoutineForOverflow	KEYWORD2
