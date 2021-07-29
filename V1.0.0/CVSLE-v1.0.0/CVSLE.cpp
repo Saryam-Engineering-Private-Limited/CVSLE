@@ -427,7 +427,11 @@ void CVSLE::startLoadSoft(){
 
 
 	//Set triac driver trigger
-	digitalWrite(_triacDriverPin, HIGH);
+	if(_absMotorFlag){
+	
+		digitalWrite(_triacDriverPin, HIGH);
+	
+	}//EOP trigger triac-driver only when ABSLoadMax reached
 
 
 	//Set load relay enable
@@ -552,14 +556,18 @@ void CVSLE::startLoadHard(){
 
 
 	//Set triac driver trigger
-	digitalWrite(_triacDriverPin, HIGH);
+	if(_absMotorFlag){
+	
+		digitalWrite(_triacDriverPin, HIGH);
+	
+	}//EOP trigger triac-driver only when ABSLoadMax reached
 
 
 	//Set load relay enable
 	digitalWrite(_loadRelayPin,HIGH);
 
 
-}//EOP startLoadSoft
+}//EOP startLoadHard
 
 
 //getInputTimePeriod
