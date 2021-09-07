@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untested]
 
+## [1.0.0] - 07-09-2021
+
+### Added
+- Created library for the above use case.
+- Class object keyword highlight - keywords.txt
+
+### Updated
+- Added _outputCompare_P reset - CVSLE.cpp
+
 ## [1.0.0] - 24-07-2021
 
 ### CVSLE Library for better control of Triac driven, zero detect load driver

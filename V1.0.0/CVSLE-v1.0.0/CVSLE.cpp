@@ -449,6 +449,7 @@ void CVSLE::stopLoad(){
 	_currentLoadStart=millis();
 	_previousLoadStart=_currentLoadStart;
 	_softStartIntervalCount=0;
+	*_outputCompare_P=CVSLE_PTMAXTC;    // Compare match register for little less than 10ms
 	motorMaxFlag=false;
 	motorStatus=false;
 	_absMotorFlag=false;
