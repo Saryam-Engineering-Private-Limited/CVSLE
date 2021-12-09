@@ -572,17 +572,17 @@ void CVSLE::startLoadHard(){
 
 
 //getInputTimePeriod
-int CVSLE::getInputTimePeriod(){
+float CVSLE::getInputTimePeriod(){
 
 	//Variables
-	int result=0;
+	float result=0;
 
 	int TCDiff=abs(_ZDCounter-624);
 
 	//Check TCDiff
 	if(TCDiff<50){
 
-		result=(_ZDCounter*10)/624;
+		result=(_ZDCounter*10.0)/624.0;
 
 	}//EOP calC TP
 	else{
@@ -610,9 +610,9 @@ float CVSLE::getInputFrequency(){
 	//Check TCDiff
 	if(TCDiff<50){
 
-		int TCP=(_ZDCounter*10)/624;
+		float TCP=(_ZDCounter*10.0)/624.0;
 
-		result=100/(TCP*2);
+		result=1000.0/(TCP*2.0);
 
 	}//EOP calC TP
 	else{

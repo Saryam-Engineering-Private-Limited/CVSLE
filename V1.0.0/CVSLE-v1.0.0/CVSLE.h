@@ -139,7 +139,7 @@ public:
 	 */
 
 
-	int getInputTimePeriod();
+	float getInputTimePeriod();
 	/*!
 	 * @brief Get input signals's time period
 	 * @return Time period as int or -1 in case of error
