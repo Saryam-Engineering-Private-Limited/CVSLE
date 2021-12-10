@@ -576,8 +576,8 @@ float CVSLE::getInputTimePeriod(){
 
 	//Variables
 	float result=0;
-
-	int TCDiff=abs(_ZDCounter-624);
+	int tempDiff=_ZDCounter-624;
+	int TCDiff=abs(tempDiff);
 
 	//Check TCDiff
 	if(TCDiff<50){
@@ -604,8 +604,8 @@ float CVSLE::getInputFrequency(){
 
 	//Variables
 	float result=0;
-
-	int TCDiff=abs(_ZDCounter-624);
+	int tempDiff=_ZDCounter-624;
+	int TCDiff=abs(tempDiff);
 
 	//Check TCDiff
 	if(TCDiff<50){
